@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Num Eventos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tema</th>
+      <th>Descripcion</th>
+      <th>Quien presenta</th>
+      <th>Observaciones</th>
+      <th>Responsable</th>
+      <th>Fecha inicio</th>
+      <th>Fecha compromiso</th>
+      <th>Pospuesto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @num_eventos.each do |num_evento| %>
+      <tr>
+        <td><%= num_evento.tema %></td>
+        <td><%= num_evento.descripcion %></td>
+        <td><%= num_evento.quien_presenta %></td>
+        <td><%= num_evento.observaciones %></td>
+        <td><%= num_evento.responsable %></td>
+        <td><%= num_evento.fecha_inicio %></td>
+        <td><%= num_evento.fecha_compromiso %></td>
+        <td><%= num_evento.pospuesto %></td>
+        <td><%= link_to 'Show', num_evento %></td>
+        <td><%= link_to 'Edit', edit_num_evento_path(num_evento) %></td>
+        <td><%= link_to 'Destroy', num_evento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Num evento', new_num_evento_path %>

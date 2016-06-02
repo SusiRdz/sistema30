@@ -1,0 +1,29 @@
+<%= form_for(@area_laboral) do |f| %>
+  <% if @area_laboral.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@area_laboral.errors.count, "error") %> prohibited this area_laboral from being saved:</h2>
+
+      <ul>
+      <% @area_laboral.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_area %><br>
+    <%= f.text_field :nombre_area %>
+  </div>
+  <div class="field">
+    <%= f.label :jefe_area %><br>
+    <%= f.number_field :jefe_area %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_field :descripcion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

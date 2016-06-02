@@ -1,0 +1,2 @@
+module AreaLaboralsHelper
+end

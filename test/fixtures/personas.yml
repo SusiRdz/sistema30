@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  fecha_nacimiento: 2016-06-01
+  edad: 1
+  curp: MyString
+  rfc: MyString
+  nss: MyString
+  telefono_casa: MyString
+  telefono_celular: MyString
+  contacto_emergencia: MyString
+  telefono_emergencia: MyString
+  fecha_ingreso: 2016-06-01
+  jefe_directo: 1
+  area_laboral_id: 1
+  email_coporativo: MyString
+  puesto_laboral_id: 1
+  salario: 1.5
+  fecha_egreso: 2016-06-01
+  baja: false
+
+two:
+  nombre: MyString
+  fecha_nacimiento: 2016-06-01
+  edad: 1
+  curp: MyString
+  rfc: MyString
+  nss: MyString
+  telefono_casa: MyString
+  telefono_celular: MyString
+  contacto_emergencia: MyString
+  telefono_emergencia: MyString
+  fecha_ingreso: 2016-06-01
+  jefe_directo: 1
+  area_laboral_id: 1
+  email_coporativo: MyString
+  puesto_laboral_id: 1
+  salario: 1.5
+  fecha_egreso: 2016-06-01
+  baja: false

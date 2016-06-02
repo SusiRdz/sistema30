@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tema:</strong>
+  <%= @num_evento.tema %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @num_evento.descripcion %>
+</p>
+
+<p>
+  <strong>Quien presenta:</strong>
+  <%= @num_evento.quien_presenta %>
+</p>
+
+<p>
+  <strong>Observaciones:</strong>
+  <%= @num_evento.observaciones %>
+</p>
+
+<p>
+  <strong>Responsable:</strong>
+  <%= @num_evento.responsable %>
+</p>
+
+<p>
+  <strong>Fecha inicio:</strong>
+  <%= @num_evento.fecha_inicio %>
+</p>
+
+<p>
+  <strong>Fecha compromiso:</strong>
+  <%= @num_evento.fecha_compromiso %>
+</p>
+
+<p>
+  <strong>Pospuesto:</strong>
+  <%= @num_evento.pospuesto %>
+</p>
+
+<%= link_to 'Edit', edit_num_evento_path(@num_evento) %> |
+<%= link_to 'Back', num_eventos_path %>

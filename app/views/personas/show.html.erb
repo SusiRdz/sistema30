@@ -1,0 +1,94 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @persona.nombre %>
+</p>
+
+<p>
+  <strong>Fecha nacimiento:</strong>
+  <%= @persona.fecha_nacimiento %>
+</p>
+
+<p>
+  <strong>Edad:</strong>
+  <%= @persona.edad %>
+</p>
+
+<p>
+  <strong>Curp:</strong>
+  <%= @persona.curp %>
+</p>
+
+<p>
+  <strong>Rfc:</strong>
+  <%= @persona.rfc %>
+</p>
+
+<p>
+  <strong>Nss:</strong>
+  <%= @persona.nss %>
+</p>
+
+<p>
+  <strong>Telefono casa:</strong>
+  <%= @persona.telefono_casa %>
+</p>
+
+<p>
+  <strong>Telefono celular:</strong>
+  <%= @persona.telefono_celular %>
+</p>
+
+<p>
+  <strong>Contacto emergencia:</strong>
+  <%= @persona.contacto_emergencia %>
+</p>
+
+<p>
+  <strong>Telefono emergencia:</strong>
+  <%= @persona.telefono_emergencia %>
+</p>
+
+<p>
+  <strong>Fecha ingreso:</strong>
+  <%= @persona.fecha_ingreso %>
+</p>
+
+<p>
+  <strong>Jefe directo:</strong>
+  <%= @persona.jefe_directo %>
+</p>
+
+<p>
+  <strong>Area laboral:</strong>
+  <%= @persona.area_laboral_id %>
+</p>
+
+<p>
+  <strong>Email coporativo:</strong>
+  <%= @persona.email_coporativo %>
+</p>
+
+<p>
+  <strong>Puesto laboral:</strong>
+  <%= @persona.puesto_laboral_id %>
+</p>
+
+<p>
+  <strong>Salario:</strong>
+  <%= @persona.salario %>
+</p>
+
+<p>
+  <strong>Fecha egreso:</strong>
+  <%= @persona.fecha_egreso %>
+</p>
+
+<p>
+  <strong>Baja:</strong>
+  <%= @persona.baja %>
+</p>
+
+<%= link_to 'Edit', edit_persona_path(@persona) %> |
+<%= link_to 'Back', personas_path %>

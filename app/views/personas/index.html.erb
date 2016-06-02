@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Personas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Fecha nacimiento</th>
+      <th>Edad</th>
+      <th>Curp</th>
+      <th>Rfc</th>
+      <th>Nss</th>
+      <th>Telefono casa</th>
+      <th>Telefono celular</th>
+      <th>Contacto emergencia</th>
+      <th>Telefono emergencia</th>
+      <th>Fecha ingreso</th>
+      <th>Jefe directo</th>
+      <th>Area laboral</th>
+      <th>Email coporativo</th>
+      <th>Puesto laboral</th>
+      <th>Salario</th>
+      <th>Fecha egreso</th>
+      <th>Baja</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personas.each do |persona| %>
+      <tr>
+        <td><%= persona.nombre %></td>
+        <td><%= persona.fecha_nacimiento %></td>
+        <td><%= persona.edad %></td>
+        <td><%= persona.curp %></td>
+        <td><%= persona.rfc %></td>
+        <td><%= persona.nss %></td>
+        <td><%= persona.telefono_casa %></td>
+        <td><%= persona.telefono_celular %></td>
+        <td><%= persona.contacto_emergencia %></td>
+        <td><%= persona.telefono_emergencia %></td>
+        <td><%= persona.fecha_ingreso %></td>
+        <td><%= persona.jefe_directo %></td>
+        <td><%= persona.area_laboral_id %></td>
+        <td><%= persona.email_coporativo %></td>
+        <td><%= persona.puesto_laboral_id %></td>
+        <td><%= persona.salario %></td>
+        <td><%= persona.fecha_egreso %></td>
+        <td><%= persona.baja %></td>
+        <td><%= link_to 'Show', persona %></td>
+        <td><%= link_to 'Edit', edit_persona_path(persona) %></td>
+        <td><%= link_to 'Destroy', persona, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Persona', new_persona_path %>

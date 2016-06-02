@@ -1,0 +1,49 @@
+<%= form_for(@num_evento) do |f| %>
+  <% if @num_evento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@num_evento.errors.count, "error") %> prohibited this num_evento from being saved:</h2>
+
+      <ul>
+      <% @num_evento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tema %><br>
+    <%= f.text_field :tema %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_field :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :quien_presenta %><br>
+    <%= f.number_field :quien_presenta %>
+  </div>
+  <div class="field">
+    <%= f.label :observaciones %><br>
+    <%= f.text_field :observaciones %>
+  </div>
+  <div class="field">
+    <%= f.label :responsable %><br>
+    <%= f.number_field :responsable %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_inicio %><br>
+    <%= f.date_select :fecha_inicio %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_compromiso %><br>
+    <%= f.date_select :fecha_compromiso %>
+  </div>
+  <div class="field">
+    <%= f.label :pospuesto %><br>
+    <%= f.number_field :pospuesto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

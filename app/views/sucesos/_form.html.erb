@@ -1,0 +1,25 @@
+<%= form_for(@suceso) do |f| %>
+  <% if @suceso.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@suceso.errors.count, "error") %> prohibited this suceso from being saved:</h2>
+
+      <ul>
+      <% @suceso.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :num_evento_id %><br>
+    <%= f.number_field :num_evento_id %>
+  </div>
+  <div class="field">
+    <%= f.label :mensaje %><br>
+    <%= f.text_area :mensaje %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

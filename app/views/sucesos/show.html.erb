@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Num evento:</strong>
+  <%= @suceso.num_evento_id %>
+</p>
+
+<p>
+  <strong>Mensaje:</strong>
+  <%= @suceso.mensaje %>
+</p>
+
+<%= link_to 'Edit', edit_suceso_path(@suceso) %> |
+<%= link_to 'Back', sucesos_path %>

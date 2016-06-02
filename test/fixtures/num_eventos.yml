@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tema: MyString
+  descripcion: MyString
+  quien_presenta: 1
+  observaciones: MyString
+  responsable: 1
+  fecha_inicio: 2016-06-01
+  fecha_compromiso: 2016-06-01
+  pospuesto: 1
+
+two:
+  tema: MyString
+  descripcion: MyString
+  quien_presenta: 1
+  observaciones: MyString
+  responsable: 1
+  fecha_inicio: 2016-06-01
+  fecha_compromiso: 2016-06-01
+  pospuesto: 1

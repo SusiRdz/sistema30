@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Num evento:</strong>
+  <%= @reunion.num_evento_id %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @reunion.fecha %>
+</p>
+
+<%= link_to 'Edit', edit_reunion_path(@reunion) %> |
+<%= link_to 'Back', reunions_path %>

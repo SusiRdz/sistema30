@@ -1,0 +1,89 @@
+<%= form_for(@persona) do |f| %>
+  <% if @persona.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@persona.errors.count, "error") %> prohibited this persona from being saved:</h2>
+
+      <ul>
+      <% @persona.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_nacimiento %><br>
+    <%= f.date_select :fecha_nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :edad %><br>
+    <%= f.number_field :edad %>
+  </div>
+  <div class="field">
+    <%= f.label :curp %><br>
+    <%= f.text_field :curp %>
+  </div>
+  <div class="field">
+    <%= f.label :rfc %><br>
+    <%= f.text_field :rfc %>
+  </div>
+  <div class="field">
+    <%= f.label :nss %><br>
+    <%= f.text_field :nss %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_casa %><br>
+    <%= f.text_field :telefono_casa %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_celular %><br>
+    <%= f.text_field :telefono_celular %>
+  </div>
+  <div class="field">
+    <%= f.label :contacto_emergencia %><br>
+    <%= f.text_field :contacto_emergencia %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_emergencia %><br>
+    <%= f.text_field :telefono_emergencia %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_ingreso %><br>
+    <%= f.date_select :fecha_ingreso %>
+  </div>
+  <div class="field">
+    <%= f.label :jefe_directo %><br>
+    <%= f.number_field :jefe_directo %>
+  </div>
+  <div class="field">
+    <%= f.label :area_laboral_id %><br>
+    <%= f.number_field :area_laboral_id %>
+  </div>
+  <div class="field">
+    <%= f.label :email_coporativo %><br>
+    <%= f.text_field :email_coporativo %>
+  </div>
+  <div class="field">
+    <%= f.label :puesto_laboral_id %><br>
+    <%= f.number_field :puesto_laboral_id %>
+  </div>
+  <div class="field">
+    <%= f.label :salario %><br>
+    <%= f.text_field :salario %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_egreso %><br>
+    <%= f.date_select :fecha_egreso %>
+  </div>
+  <div class="field">
+    <%= f.label :baja %><br>
+    <%= f.check_box :baja %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
